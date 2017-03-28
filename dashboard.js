@@ -31,7 +31,7 @@ export const Dashboard = withRouter(
 		logOut(event){
 			// debugger;
 			console.log("logging out!")
-			this.props.router.push('/')
+			this.props.router.push('/twitterreact')
 			delete localStorage.user;
 		},
 		goProfile(event){
