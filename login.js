@@ -190,8 +190,8 @@ function enteringLogin(nextState, replace){
 
 ReactDom.render((
 	<Router history={browserHistory}>
-		<Route path="/" component={Login} onEnter={enteringLogin}/>
-		<Route path=":uname" component={Dashboard} onEnter={requireAuth}/>
+		<Route path="/twitterreact" component={Login} onEnter={enteringLogin}/>
+		<Route path="/twitterreact/:uname" component={Dashboard} onEnter={requireAuth}/>
 		<Route path="profile/:uname" component={Profile}  addHandlerKey={true} />
 	</Router>
 ), document.getElementById('app'));
